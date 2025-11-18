@@ -1,20 +1,22 @@
-import { Link, useLocation } from "react-router-dom";
-import { User, Briefcase, Map, Menu } from "lucide-react";
+import { Link, useLocation, Outlet } from "react-router-dom";
+import { User, Briefcase, Map, Menu, ShoppingBag, Users, BriefcaseIcon, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import ChatAssistant from "../ChatAssistant";
 
-interface AppLayoutProps {
-  children: React.ReactNode;
-}
-
-const AppLayout = ({ children }: AppLayoutProps) => {
+const AppLayout = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/profile", label: "Meu Skill DNA", icon: User },
+    { path: "/", label: "Início", icon: Home },
+    { path: "/profile", label: "Perfil", icon: User },
     { path: "/careers", label: "Carreiras", icon: Briefcase },
-    { path: "/roadmap", label: "Minha Jornada", icon: Map },
+    { path: "/roadmap", label: "Jornada", icon: Map },
+    { path: "/lms", label: "LMS", icon: BriefcaseIcon },
+    { path: "/shop", label: "Shop", icon: ShoppingBag },
+    { path: "/community", label: "Comunidade", icon: Users },
+    { path: "/jobs", label: "Vagas", icon: BriefcaseIcon },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -80,9 +82,10 @@ const AppLayout = ({ children }: AppLayoutProps) => {
 
         {/* Main Content */}
         <main className="flex-1">
-          {children}
+          <Outlet />
         </main>
       </div>
+      <ChatAssistant />
     </div>
   );
 };
