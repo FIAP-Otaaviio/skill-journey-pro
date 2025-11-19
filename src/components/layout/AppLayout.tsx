@@ -1,7 +1,6 @@
 import { Link, useLocation, Outlet } from "react-router-dom";
-import { User, Briefcase, Map, Menu, ShoppingBag, Users, BriefcaseIcon, Home } from "lucide-react";
+import { User, Briefcase, Map, Menu, Users, BriefcaseIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import ChatAssistant from "../ChatAssistant";
 
@@ -9,12 +8,9 @@ const AppLayout = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "Início", icon: Home },
     { path: "/profile", label: "Perfil", icon: User },
     { path: "/careers", label: "Carreiras", icon: Briefcase },
     { path: "/roadmap", label: "Jornada", icon: Map },
-    { path: "/lms", label: "LMS", icon: BriefcaseIcon },
-    { path: "/shop", label: "Shop", icon: ShoppingBag },
     { path: "/community", label: "Comunidade", icon: Users },
     { path: "/jobs", label: "Vagas", icon: BriefcaseIcon },
   ];
@@ -63,12 +59,6 @@ const AppLayout = () => {
             </Link>
           </div>
 
-          <div className="flex items-center gap-4">
-            <Avatar className="h-9 w-9 border-2 border-secondary">
-              <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=user" />
-              <AvatarFallback>U</AvatarFallback>
-            </Avatar>
-          </div>
         </div>
       </header>
 

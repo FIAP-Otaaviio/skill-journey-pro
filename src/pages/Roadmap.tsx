@@ -43,7 +43,7 @@ const Roadmap = () => {
       <div className="space-y-4">
         <div className="flex items-center gap-4">
           <Avatar className="h-16 w-16 border-4 border-secondary">
-            <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=journey" />
+            <AvatarImage src="https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg" />
             <AvatarFallback>JN</AvatarFallback>
           </Avatar>
           <div className="flex-1">

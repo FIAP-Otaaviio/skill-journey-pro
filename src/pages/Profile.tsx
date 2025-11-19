@@ -53,7 +53,7 @@ const Profile = () => {
       {/* Header Section */}
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
         <Avatar className="h-24 w-24 border-4 border-secondary shadow-card">
-          <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=user" />
+          <AvatarImage src="https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg" />
           <AvatarFallback>U</AvatarFallback>
         </Avatar>
         <div className="flex-1">
