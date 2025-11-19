@@ -52,38 +52,41 @@ const Profile = () => {
     <div className="container max-w-7xl px-4 py-8 space-y-8">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-        <Avatar className="h-24 w-24 border-4 border-secondary shadow-card">
+        <Avatar className="h-28 w-28 border-4 border-primary shadow-card">
           <AvatarImage src="https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg" />
           <AvatarFallback>U</AvatarFallback>
         </Avatar>
         <div className="flex-1">
-          <h1 className="text-3xl font-bold text-foreground mb-2">Meu Skill DNA</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-4xl font-extrabold text-foreground mb-3 tracking-tight">Meu Skill DNA</h1>
+          <p className="text-lg text-muted-foreground font-medium">
             Seu perfil único de habilidades e competências profissionais
           </p>
         </div>
-        <Button size="lg" className="bg-gradient-primary hover:opacity-90">
+        <Button size="lg" className="bg-gradient-primary hover:opacity-90 font-bold text-base px-8">
           Editar Skill DNA
         </Button>
       </div>
 
       {/* Radar Chart Section */}
-      <Card className="shadow-card">
-        <CardHeader>
-          <CardTitle className="text-2xl">Mapeamento de Habilidades</CardTitle>
+      <Card className="shadow-card border-2">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-3xl font-extrabold">Mapeamento de Habilidades</CardTitle>
+          <p className="text-base text-muted-foreground mt-2">
+            Visualização completa do seu perfil de competências
+          </p>
         </CardHeader>
-        <CardContent>
+        <CardContent className="pt-6">
           <SkillRadarChart data={skillData} />
-          <p className="text-center text-sm text-muted-foreground mt-4">
-            Seu perfil de habilidades baseado em experiências e avaliações
+          <p className="text-center text-sm text-muted-foreground mt-6 italic">
+            Baseado em suas experiências profissionais e avaliações
           </p>
         </CardContent>
       </Card>
 
       {/* Soft Skills Section */}
       <div>
-        <h2 className="text-2xl font-bold text-foreground mb-6">Minhas Soft Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className="text-3xl font-extrabold text-foreground mb-8 tracking-tight">Minhas Soft Skills</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {softSkills.map((skill) => (
             <SoftSkillCard
               key={skill.title}
