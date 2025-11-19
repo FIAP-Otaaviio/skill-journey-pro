@@ -78,7 +78,7 @@ const Jobs = () => {
           <h1 className="text-3xl font-bold text-foreground">Oportunidades</h1>
           <p className="text-muted-foreground">Vagas personalizadas para seu Skill DNA</p>
         </div>
-        <Button className="bg-gradient-primary hover:opacity-90">
+        <Button className="bg-gradient-primary hover:opacity-90 text-white font-semibold">
           <Briefcase className="mr-2 h-4 w-4" />
           Meu Perfil Profissional
         </Button>
@@ -202,7 +202,7 @@ const Jobs = () => {
 
                   <div className="flex gap-2">
                     <Button
-                      className="bg-gradient-primary hover:opacity-90"
+                      className="bg-gradient-primary hover:opacity-90 text-white font-semibold"
                       disabled={!job.unlocked}
                       onClick={() => handleApply(job.title, job.unlocked)}
                     >

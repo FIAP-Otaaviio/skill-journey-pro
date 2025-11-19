@@ -16,7 +16,7 @@ const Index = () => {
         </p>
         <div className="flex gap-4 justify-center">
           <Link to="/profile">
-            <Button size="lg" className="bg-gradient-primary hover:opacity-90">
+            <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-white font-semibold">
               Começar Agora
             </Button>
           </Link>

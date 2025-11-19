@@ -62,7 +62,7 @@ const Profile = () => {
             Seu perfil único de habilidades e competências profissionais
           </p>
         </div>
-        <Button size="lg" className="bg-gradient-primary hover:opacity-90 font-bold text-base px-8">
+        <Button size="lg" className="bg-gradient-primary hover:opacity-90 font-bold text-base px-8 text-white">
           Editar Skill DNA
         </Button>
       </div>

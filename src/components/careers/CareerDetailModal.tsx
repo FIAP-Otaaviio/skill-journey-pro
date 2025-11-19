@@ -112,7 +112,7 @@ const CareerDetailModal = ({ career, open, onOpenChange, onStartJourney }: Caree
 
           <Button 
             onClick={onStartJourney} 
-            className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+            className="w-full bg-gradient-primary hover:opacity-90 transition-opacity text-white font-semibold"
             size="lg"
           >
             Iniciar Jornada
