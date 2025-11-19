@@ -17,7 +17,7 @@ const Community = () => {
     {
       id: 1,
       user: "Ana Silva",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=ana",
+      avatar: "https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg",
       module: "Python Básico",
       question: "Como funciona o conceito de list comprehension?",
       replies: 5,
@@ -27,7 +27,7 @@ const Community = () => {
     {
       id: 2,
       user: "Carlos Santos",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=carlos",
+      avatar: "https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg",
       module: "Análise de Dados",
       question: "Qual biblioteca usar para visualização: Matplotlib ou Seaborn?",
       replies: 12,
@@ -37,7 +37,7 @@ const Community = () => {
     {
       id: 3,
       user: "Maria Costa",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=maria",
+      avatar: "https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg",
       module: "Banco de Dados",
       question: "Diferença entre SQL e NoSQL na prática?",
       replies: 8,
@@ -47,9 +47,9 @@ const Community = () => {
   ];
 
   const topMentors = [
-    { name: "João Mentor", helped: 156, avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=mentor1" },
-    { name: "Patricia Expert", helped: 142, avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=mentor2" },
-    { name: "Ricardo Pro", helped: 128, avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=mentor3" },
+    { name: "João Mentor", helped: 156, avatar: "https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg" },
+    { name: "Patricia Expert", helped: 142, avatar: "https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg" },
+    { name: "Ricardo Pro", helped: 128, avatar: "https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg" },
   ];
 
   return (

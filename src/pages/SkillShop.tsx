@@ -89,7 +89,7 @@ const SkillShop = () => {
             <div className="flex justify-center">
               <div className="relative">
                 <Avatar className="h-32 w-32 border-4 border-primary shadow-card">
-                  <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=premium" />
+                  <AvatarImage src="https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg" />
                   <AvatarFallback>PR</AvatarFallback>
                 </Avatar>
                 <div className="absolute -top-2 -right-2 bg-accent rounded-full p-2">
