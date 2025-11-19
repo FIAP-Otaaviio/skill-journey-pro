@@ -83,7 +83,7 @@ const SkillShop = () => {
                   <Coins className="h-5 w-5 text-accent" />
                   <span className="text-xl font-bold text-foreground">500</span>
                 </div>
-                <Button className="bg-gradient-warm hover:opacity-90">Comprar Agora</Button>
+                <Button className="bg-gradient-warm hover:opacity-90 text-slate-900 font-bold">Comprar Agora</Button>
               </div>
             </div>
             <div className="flex justify-center">

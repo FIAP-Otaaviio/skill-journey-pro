@@ -17,7 +17,7 @@ const LMS = () => {
             <h1 className="text-3xl font-bold text-foreground">Módulo: Lógica de Programação</h1>
             <p className="text-muted-foreground mt-1">Capítulo 3: Estruturas de Controle</p>
           </div>
-          <Badge className="bg-gradient-primary text-white">Em Progresso</Badge>
+          <Badge className="bg-gradient-primary text-white font-semibold">Em Progresso</Badge>
         </div>
 
         <Card className="p-4 bg-gradient-glass backdrop-blur-glass border-primary/20">
@@ -92,7 +92,7 @@ const LMS = () => {
                       {'}'}
                     </code>
                   </div>
-                  <Button className="w-full bg-gradient-primary">Executar Código</Button>
+                  <Button className="w-full bg-gradient-primary text-white font-semibold">Executar Código</Button>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -151,9 +151,9 @@ const LMS = () => {
           {/* Next Module */}
           <Card className="bg-gradient-warm text-white shadow-card">
             <CardContent className="p-6">
-              <p className="text-sm opacity-90 mb-2">Próximo Módulo</p>
+              <p className="text-sm text-white/90 mb-2 font-medium">Próximo Módulo</p>
               <h3 className="font-bold text-lg mb-4">Python Básico</h3>
-              <Button variant="secondary" className="w-full">
+              <Button className="w-full bg-white text-slate-900 hover:bg-white/90 font-bold">
                 Visualizar
               </Button>
             </CardContent>

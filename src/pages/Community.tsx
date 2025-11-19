@@ -60,7 +60,7 @@ const Community = () => {
           <h1 className="text-3xl font-bold text-foreground">Comunidade</h1>
           <p className="text-muted-foreground">Aprenda e colabore com outros profissionais</p>
         </div>
-        <Button className="bg-gradient-primary hover:opacity-90">
+        <Button className="bg-gradient-primary hover:opacity-90 text-white font-semibold">
           <MessageSquare className="mr-2 h-4 w-4" />
           Nova Pergunta
         </Button>
@@ -167,15 +167,14 @@ const Community = () => {
           {/* Request Help */}
           <Card className="bg-gradient-warm text-white shadow-card">
             <CardHeader>
-              <CardTitle className="text-white">Precisa de Ajuda Urgente?</CardTitle>
+              <CardTitle className="text-white font-bold">Precisa de Ajuda Urgente?</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm opacity-90 mb-4">
+              <p className="text-sm text-white/90 mb-4 font-medium">
                 Gaste coins para obter ajuda prioritária de um mentor especializado.
               </p>
               <Button
-                variant="secondary"
-                className="w-full"
+                className="w-full bg-white text-slate-900 hover:bg-white/90 font-bold"
                 onClick={handleRequestHelp}
               >
                 <Coins className="mr-2 h-4 w-4" />
