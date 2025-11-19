@@ -76,7 +76,7 @@ const Roadmap = () => {
             </linearGradient>
           </defs>
           <path
-            d="M 15 20 Q 30 35, 50 30 T 75 25 T 85 40"
+            d="M 15 20 Q 22 28, 30 35 Q 40 32, 50 30"
             fill="none"
             stroke="url(#pathGradient)"
             strokeWidth="4"
