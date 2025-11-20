@@ -17,13 +17,18 @@ const formSchema = z.object({
   availability: z.string().min(1, "Selecione uma opção"),
   motivation: z.string().min(1, "Selecione uma opção"),
   techInterest: z.string().min(1, "Selecione uma opção"),
+  conflictManagement: z.string().min(1, "Selecione uma opção"),
+  teamwork: z.string().min(1, "Selecione uma opção"),
+  deadlinePressure: z.string().min(1, "Selecione uma opção"),
+  feedbackReaction: z.string().min(1, "Selecione uma opção"),
+  taskPriority: z.string().min(1, "Selecione uma opção"),
 });
 
 const Assessment = () => {
   const [step, setStep] = useState(1);
   const [isComplete, setIsComplete] = useState(false);
   const { toast } = useToast();
-  const totalSteps = 6;
+  const totalSteps = 11;
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -34,6 +39,11 @@ const Assessment = () => {
       availability: "",
       motivation: "",
       techInterest: "",
+      conflictManagement: "",
+      teamwork: "",
+      deadlinePressure: "",
+      feedbackReaction: "",
+      taskPriority: "",
     },
   });
 
@@ -105,6 +115,55 @@ const Assessment = () => {
         { value: "mobile", label: "Aplicativos Mobile" },
         { value: "data", label: "Ciência de Dados" },
         { value: "ai", label: "Inteligência Artificial" },
+      ],
+    },
+    {
+      id: "conflictManagement",
+      title: "Um cliente (ou colega de outro setor) está muito irritado reclamando de um erro que não foi culpa sua. Como você reage?",
+      options: [
+        { value: "firm", label: "A) Explico firmemente que o erro não é meu e digo para ele falar com o responsável." },
+        { value: "empathetic", label: "B) Escuto a reclamação até o fim, peço desculpas pelo transtorno (mesmo não sendo culpa minha) e ajudo a encontrar quem resolve." },
+        { value: "ignore", label: "C) Ignoro a reclamação para não me estressar e continuo meu trabalho." },
+      ],
+    },
+    {
+      id: "teamwork",
+      title: "Em um projeto em equipe, como você prefere trabalhar?",
+      options: [
+        { value: "leader", label: "Gosto de liderar e coordenar as atividades do grupo" },
+        { value: "collaborative", label: "Prefiro colaborar igualmente e compartilhar responsabilidades" },
+        { value: "independent", label: "Trabalho melhor sozinho, fazendo minha parte separadamente" },
+        { value: "support", label: "Gosto de apoiar os outros e ajudar onde for necessário" },
+      ],
+    },
+    {
+      id: "deadlinePressure",
+      title: "Você tem um prazo apertado e percebe que não vai conseguir entregar tudo. O que faz?",
+      options: [
+        { value: "communicate", label: "Comunico imediatamente e negocio prioridades ou prazos" },
+        { value: "overtime", label: "Trabalho horas extras para tentar cumprir o prazo original" },
+        { value: "partial", label: "Entrego o que consegui fazer e explico o motivo depois" },
+        { value: "help", label: "Peço ajuda à equipe para dividir as tarefas" },
+      ],
+    },
+    {
+      id: "feedbackReaction",
+      title: "Você recebe um feedback negativo sobre seu trabalho. Como reage?",
+      options: [
+        { value: "defensive", label: "Fico na defensiva e justifico minhas escolhas" },
+        { value: "receptive", label: "Escuto com atenção, agradeço e busco melhorar" },
+        { value: "demotivated", label: "Me sinto desmotivado e levo para o lado pessoal" },
+        { value: "clarify", label: "Peço exemplos específicos para entender melhor o que melhorar" },
+      ],
+    },
+    {
+      id: "taskPriority",
+      title: "Você tem várias tarefas urgentes ao mesmo tempo. Como decide o que fazer primeiro?",
+      options: [
+        { value: "impact", label: "Priorizo o que tem maior impacto no resultado final" },
+        { value: "easy", label: "Faço primeiro as tarefas mais rápidas para diminuir a lista" },
+        { value: "deadline", label: "Organizo por prazo, fazendo primeiro o que vence mais cedo" },
+        { value: "ask", label: "Consulto meu líder ou equipe para definir prioridades juntos" },
       ],
     },
   ];
