@@ -12,6 +12,7 @@ import LMS from "./pages/LMS";
 import SkillShop from "./pages/SkillShop";
 import Community from "./pages/Community";
 import Jobs from "./pages/Jobs";
+import Assessment from "./pages/Assessment";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/profile" element={<Profile />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/roadmap" element={<Roadmap />} />
+            <Route path="/assessment" element={<Assessment />} />
             <Route path="/lms" element={<LMS />} />
             <Route path="/shop" element={<SkillShop />} />
             <Route path="/community" element={<Community />} />
