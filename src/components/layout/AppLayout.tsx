@@ -1,5 +1,5 @@
 import { Link, useLocation, Outlet } from "react-router-dom";
-import { User, Briefcase, Map, Menu, Users, BriefcaseIcon } from "lucide-react";
+import { User, Briefcase, Map, Menu, Users, BriefcaseIcon, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import ChatAssistant from "../ChatAssistant";
@@ -11,6 +11,7 @@ const AppLayout = () => {
     { path: "/profile", label: "Perfil", icon: User },
     { path: "/careers", label: "Carreiras", icon: Briefcase },
     { path: "/roadmap", label: "Jornada", icon: Map },
+    { path: "/assessment", label: "Diagnóstico", icon: ClipboardCheck },
     { path: "/community", label: "Comunidade", icon: Users },
     { path: "/jobs", label: "Vagas", icon: BriefcaseIcon },
   ];
